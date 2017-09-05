@@ -1,0 +1,7 @@
+test/
+out/
+.gradle
+.idea
+build/
+*.iml
+node_modules/
