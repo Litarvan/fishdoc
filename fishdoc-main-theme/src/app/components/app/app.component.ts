@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MdIconRegistry } from '@angular/material';
 
 @Component({
   selector: 'fishdoc-root',
@@ -8,4 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent
 {
   title = 'fishdoc';
+
+  constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'menu',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ic_menu_black_24px.svg'));
+  }
 }

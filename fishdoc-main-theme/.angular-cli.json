@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.app.json",
       "prefix": "fishdoc",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

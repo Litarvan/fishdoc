@@ -1,16 +1,22 @@
+<!-- Top nav bar -->
+<md-toolbar>
+  <button id="nav-button" md-icon-button (click)="sidenav.toggle()"><md-icon id="nav-icon" svgIcon="menu"></md-icon></button>
+  <span>Fishdoc</span>
+</md-toolbar>
+
+<!-- Main container -->
 <md-sidenav-container>
+  <!-- Side navigation -->
   <md-sidenav #sidenav mode="side" opened="true">
     <p>
-      Je t'aime beaucoup tu sais
+      Je suis le côté
     </p>
   </md-sidenav>
 
-  Je te trouve pas beau<br>
-  Vraiment aps beau<br>
-  Du tout du tout
-
-  <button md-mini-fab class="example-fab" (click)="sidenav.toggle()">
-    <md-icon>add</md-icon>
-  </button>
-  <router-outlet></router-outlet>
+  <div id="main-content">
+    <!-- Main content -->
+    Je suis le contenu principal
+    <router-outlet>
+    </router-outlet>
+  </div>
 </md-sidenav-container>

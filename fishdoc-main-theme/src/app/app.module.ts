@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './components/app/app.component';
 import { RouterModule, Routes } from '@angular/router';
-import { MdSidenavModule } from '@angular/material';
+import { MdButtonModule, MdIconModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 const routes: Routes = [
   {
@@ -23,7 +24,12 @@ const routes: Routes = [
 
     RouterModule.forRoot(routes),
 
-    MdSidenavModule
+    HttpModule,
+
+    MdSidenavModule,
+    MdToolbarModule,
+    MdIconModule,
+    MdButtonModule
   ],
   exports: [RouterModule],
   providers: [],
