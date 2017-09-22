@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './components/app/app.component';
 import { RouterModule, Routes } from '@angular/router';
-import { MdButtonModule, MdIconModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
+import { MdButtonModule, MdExpansionModule, MdIconModule, MdSidenavModule, MdToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 
@@ -29,7 +29,8 @@ const routes: Routes = [
     MdSidenavModule,
     MdToolbarModule,
     MdIconModule,
-    MdButtonModule
+    MdButtonModule,
+    MdExpansionModule
   ],
   exports: [RouterModule],
   providers: [],

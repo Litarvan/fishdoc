@@ -14,6 +14,6 @@ export class AppComponent
   constructor(iconRegistry: MdIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'menu',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ic_menu_black_24px.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('assets/icons/ic_menu_white_24px.svg'));
   }
 }
